@@ -1,0 +1,117 @@
+/*paleta
+	https://color.adobe.com/es/create/color-wheel/?copy=true&base=2&rule=Custom&selected=4&name=Copia%20de%20Snow%20mountains&mode=rgb&rgbvalues=0.705882,0.827451,0.764706,0.909804,0.901961,0.85098,0.952941,0.937255,0.890196,0.909804,0.901961,0.85098,0.498039,0.505882,0.603922&swatchOrder=0,1,2,3,4*/
+
+
+*{	box-sizing: border-box; }
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fafafa;
+	font-family: 'Signika', sans-serif;
+}
+
+a{ text-decoration: none; }
+
+ul {
+	list-style-type: none;
+}
+
+section{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+}
+
+input[type="submit"],.bgimg p { color: #fff }
+
+.bgimg p, .anotaciones { position: absolute; }
+
+.bgimg p {
+	font-size: 1.2rem;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	z-index: 1;
+	padding: 10px;
+}
+
+.bimg, form{ width: 350px; }
+
+.bgimg { 
+	background : #000;
+	height: 80px;
+}
+
+.bgimg img {
+	box-shadow: 0 1px 5px 0px rgba(0,0,0,0.75);
+	object-fit: cover;
+	opacity: 0.75;
+	position: relative;
+}
+
+form {
+	background-color: #fff;
+	height: auto;
+	padding: 1.5rem;
+	box-shadow: 0 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+.field{ margin-bottom: 5px; }
+
+textarea{
+	max-height: 100px;
+	resize: none
+}
+
+label{ color: #7C8A83; }
+
+form .field:nth-child(4) label:nth-child(1) , .field:nth-child(5) label:nth-child(1) {
+	display: inline-block;
+	width: 100%;
+}
+
+form .field:nth-child(8) a{
+	font-size: 13px;
+}
+
+form .field:nth-child(9) {
+	padding-top: 5px;
+	margin-bottom: 0;
+}
+
+textarea,select, 
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+	width: 95%;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #E8E6D9;
+	margin-left: 15px;
+}
+
+input[type="submit"]{
+	background-color: #7F819A;
+	border: none;
+	padding: 5px;
+	width: 100%;
+}
+
+.terminos a{
+	font-size: .5rem;
+	cursor: pointer;
+}
+
+.anotaciones {
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	width: 25%;
+}
+
+.tip{
+	font-size: 12px;
+}
